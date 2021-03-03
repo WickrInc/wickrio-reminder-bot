@@ -11,7 +11,7 @@
     "wickrbot": "^0.1.1",
     "chrono-node": "^1.4.8",
     "uuid": "^8.2.0",
-    "wickrio_addon": "^5.56.13"
+    "wickrio_addon": "5.76.*"
   },
   "devDependencies": {
     "chai": "^4.2.0",
