@@ -1,13 +1,13 @@
 class FakeWickr {
-    clientInit() {}
-    cmdAddKeyValue() {}
-    cmdClearAllKeyValues() {}
-    cmdDeleteKeyValue() {}
-    cmdGetKeyValue() {}
-    cmdGetRooms() {}
-    cmdStartAsyncRecvMessages() {}
-    cmdSendRoomMessage() {}
-    isConnected() {}
+  clientInit() {}
+  cmdAddKeyValue() {}
+  cmdClearAllKeyValues() {}
+  cmdDeleteKeyValue() {}
+  cmdGetKeyValue() {}
+  cmdGetRooms() {}
+  cmdStartAsyncRecvMessages() {}
+  cmdSendRoomMessage() {}
+  isConnected() {}
 }
 
-module.exports = FakeWickr;
+module.exports = FakeWickr
