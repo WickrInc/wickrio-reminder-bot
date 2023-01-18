@@ -14,7 +14,7 @@ describe('reminder', function() {
         input: 'me to go for a walk in an hour',
         expected: {
           action: 'go for a walk',
-          dateText: 'in an hour',
+          dateText: 'an hour',
           infinitive: true,
         },
       },
@@ -30,7 +30,7 @@ describe('reminder', function() {
         input: 'clothes in the dryer in 666 seconds',
         expected: {
           action: 'clothes in the dryer',
-          dateText: 'in 666 seconds',
+          dateText: '666 seconds',
           infinitive: false,
         },
       },
@@ -46,7 +46,7 @@ describe('reminder', function() {
         input: 'sprinkler in 1 hour',
         expected: {
           action: 'sprinkler',
-          dateText: 'in 1 hour',
+          dateText: '1 hour',
           infinitive: false,
         },
       },
@@ -54,7 +54,7 @@ describe('reminder', function() {
         input: 'mess with parser in 123124 seconds',
         expected: {
           action: 'mess with parser',
-          dateText: 'in 123124 seconds',
+          dateText: '123124 seconds',
           infinitive: false,
         },
       },
@@ -62,7 +62,7 @@ describe('reminder', function() {
         input: 'me in an hour to go for a walk',
         expected: {
           action: 'go for a walk',
-          dateText: 'in an hour',
+          dateText: 'an hour',
           infinitive: true,
         },
       },
@@ -70,7 +70,7 @@ describe('reminder', function() {
         input: 'in an hour to go for a walk',
         expected: {
           action: 'go for a walk',
-          dateText: 'in an hour',
+          dateText: 'an hour',
           infinitive: true,
         },
       },
@@ -78,7 +78,7 @@ describe('reminder', function() {
         input: 'me to go for a long walk in an hour please',
         expected: {
           action: 'go for a long walk',
-          dateText: 'in an hour',
+          dateText: 'an hour',
           infinitive: true,
         },
       },
