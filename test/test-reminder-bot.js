@@ -242,4 +242,37 @@ describe('reminder-bot', function() {
       expect(this.bot.getRemindersToNotify()).to.eql(past)
     })
   })
+
+  describe('#_createSnoozeButtons', function() {
+    it('returns the reminder if it\'s deleted', function() {
+      const reminder = { infinitive: true, action: 'go for a walk' }
+      const expected = {
+        meta: {
+          buttons: [
+            {
+              type: 'message',
+              text: 'Snooze 20m',
+              message: '/remind me in 20 minutes to go for a walk',
+            },
+            {
+              type: 'message',
+              text: 'Snooze 1h',
+              message: '/remind me in 1 hour to go for a walk',
+            },
+            {
+              type: 'message',
+              text: 'Snooze 3h',
+              message: '/remind me in 3 hours to go for a walk',
+            },
+            {
+              type: 'message',
+              text: 'Snooze 24h',
+              message: '/remind me in 24 hours to go for a walk',
+            },
+          ],
+        },
+      }
+      expect(this.bot._createSnoozeButtons(reminder)).to.eql(expected)
+    })
+  })
 })
